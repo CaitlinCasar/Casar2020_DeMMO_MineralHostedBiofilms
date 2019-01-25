@@ -473,7 +473,7 @@ DeMMO1_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[1])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[1])*(as.numeric(data[1])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[1])*(as.numeric(data[1])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -488,7 +488,7 @@ DeMMO2_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[2])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[2])*(as.numeric(data[2])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[2])*(as.numeric(data[2])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -504,7 +504,7 @@ DeMMO3_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[3])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[3])*(as.numeric(data[3])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[3])*(as.numeric(data[3])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -519,7 +519,7 @@ DeMMO4_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[4])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[4])*(as.numeric(data[4])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[4])*(as.numeric(data[4])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -534,7 +534,7 @@ DeMMO5_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[5])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[5])*(as.numeric(data[5])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[5])*(as.numeric(data[5])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -549,7 +549,7 @@ DeMMO6_ED_dens_fun <- function(data){
   e.donor.act <- as.vector(unlist(c(activities[,grepl(paste(e.donor, collapse = "|"), colnames(activities))])))
   e.donor.act.len <- length(e.donor.act[6])
   if (e.donor.act.len > 0){
-    print(log10((10^e.donor.act[6])*(as.numeric(data[6])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.donor.act[6])*(as.numeric(data[6])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -564,7 +564,7 @@ DeMMO1_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[1])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[1])*(as.numeric(data[1])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[1])*(as.numeric(data[1])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -580,7 +580,7 @@ DeMMO2_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[2])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[2])*(as.numeric(data[2])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[2])*(as.numeric(data[2])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -595,7 +595,7 @@ DeMMO3_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[3])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[3])*(as.numeric(data[3])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[3])*(as.numeric(data[3])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -610,7 +610,7 @@ DeMMO4_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[4])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[4])*(as.numeric(data[4])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[4])*(as.numeric(data[4])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -625,7 +625,7 @@ DeMMO5_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[5])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[5])*(as.numeric(data[5])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[5])*(as.numeric(data[5])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -640,7 +640,7 @@ DeMMO6_EA_dens_fun <- function(data){
   e.acceptor.act <- as.vector(unlist(c(activities[,grepl(paste(e.acceptor, collapse = "|"), colnames(activities))])))
   e.acceptor.act.len <- length(e.acceptor.act[6])
   if (e.acceptor.act.len > 0){
-    print(log10((10^e.acceptor.act[6])*(as.numeric(data[6])/abs(as.numeric(data[21])))))
+    print(log10(-(10^e.acceptor.act[6])*(as.numeric(data[6])/abs(as.numeric(data[21])))))
   }
 }
 
@@ -692,9 +692,9 @@ Edens_plot <- ggplot(Edens_plot_data, aes(E_dens, reorder(rxn.number, -DeltaG_no
   geom_point(show.legend = FALSE) + 
   scale_shape_manual(values = c(17, 25,18, 19, 1, 15)) + 
   #scale_x_reverse() +
-  coord_cartesian(xlim = c(-10, 10)) +
+  coord_cartesian(xlim = c(-5, 1)) +
   xlab("ΔGr (log J/kg H2O)") + 
-  geom_vline(xintercept = 0, linetype="dotted", color = "black") +
+  #geom_vline(xintercept = 0, linetype="dotted", color = "black") +
   theme(panel.grid.minor = element_line(colour="white", size=0.5)) +
   theme(axis.title.y = element_blank()) +
   scale_y_discrete(breaks = seq(0, 33, 1)) +
