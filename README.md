@@ -9,7 +9,7 @@
 
 ## fluid, mineral, and inert control community data
 
-- sequenced at Argonne National Laboratory
+- 16s rRNA gene sequencing at Argonne National Laboratory
 - processed using QIIME and R 
 
 ## fluid geochemistry 
