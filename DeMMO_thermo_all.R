@@ -56,11 +56,32 @@ DeMMO_logK <- function(data){
 #store the output of the function applied to the reactions dataframe in new dataframe DeMMO_thermo
 DeMMO_thermo <- apply(reactions, 1, DeMMO_logK)
 
+#calculate logK at 25C for manganite rxns
+manganite_reactions <- reactions[c(14,22,31),]
+
+DeMMO_manganite.rxns_logK <- function(data){
+  rxn.number <- data[1]
+  react.prod <- as.vector(unlist(c(data[4:12])))
+  react.prod <-react.prod[react.prod != ""] 
+  react.coeffs <- as.vector(na.omit(as.numeric(data[14:22])))
+  react.states <- as.vector(unlist(c(data[23:31])))
+  react.states <- react.states[react.states != ""]
+  #DeMMO_T <- c(283.45, 285.55, 289.35, 295.65, 304.85, 294.65)
+  rxn <- subcrt(react.prod, react.coeffs, react.states, T=c(rep(298.15, 6)))
+  DeMMO_thermo[rxn.number] <- rxn$out$logK
+}
+
+DeMMO_manganite.logK <- apply(manganite_reactions, 1,DeMMO_manganite.rxns_logK)
+
+#add manganite values to DeMMO_thermo
+DeMMO_thermo[,14] <- DeMMO_manganite.logK[,1]
+DeMMO_thermo[,22] <- DeMMO_manganite.logK[,2]
+DeMMO_thermo[,31] <- DeMMO_manganite.logK[,3]
+
 #format the DeMMO_thermo dataframe
 colnames(DeMMO_thermo) <- c(1:33)
 colnames(DeMMO_thermo) <- paste("rxn", colnames(DeMMO_thermo), "logK", sep = ".")
 DeMMO_thermo<- cbind(Site=c("DeMMO1", "DeMMO2", "DeMMO3", "DeMMO4", "DeMMO5", "DeMMO6"), DeMMO_thermo)
-
 
 
 DeMMO1_logQ <- function(data){
@@ -665,7 +686,7 @@ deltaG_plot <- ggplot(DeMMO_thermo_data, aes(DeltaG_norm, reorder(rxn.number, -D
   xlab("ΔGr (kJ/mol e-)") + 
   ylab("Reaction #") +
   geom_vline(xintercept = 0, linetype="dotted", color = "black") +
-  theme(legend.position = c(.1, .78), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
+  theme(legend.position = c(.1, .84), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
   theme(legend.key.size =  unit(0.1, "in"))
 
 Edens_plot_data <- gather(DeMMO_E_dens, Site, E_dens, DeMMO1_EDdens:DeMMO6_EAdens, factor_key=TRUE)
@@ -684,22 +705,19 @@ Edens_plot_data$E_dens <- as.numeric(as.character(Edens_plot_data$E_dens))
 
 Edens_plot_data$E.donor.acceptor <- factor(Edens_plot_data$E.donor.acceptor,  levels = c("SO4-2", "NO3-", "CH4", "NH4+", "HS-", "HCO3-","H2", "Fe+2", "acetate"))
 
-#subset only exergonic reactions
-#Edens_plot_data <- Edens_plot_data[ Edens_plot_data$DeltaG_norm < 0,] 
 
 Edens_plot <- ggplot(Edens_plot_data, aes(E_dens, reorder(rxn.number, -DeltaG_norm), shape=Site, group=rxn.number)) +
   geom_line(aes(color=E.donor.acceptor), size=2.5, alpha=0.6) +
   geom_point(show.legend = FALSE) + 
   scale_shape_manual(values = c(17, 25,18, 19, 1, 15)) + 
-  #scale_x_reverse() +
-  coord_cartesian(xlim = c(-5, 1)) +
+  coord_cartesian(xlim = c(-5, 2)) +
   xlab("ΔGr (log J/kg H2O)") + 
-  #geom_vline(xintercept = 0, linetype="dotted", color = "black") +
+  geom_hline(yintercept = c(16,18,23,31), color = "black", linetype="dotted", size=1.5, alpha=0.3) +
   theme(panel.grid.minor = element_line(colour="white", size=0.5)) +
   theme(axis.title.y = element_blank()) +
   scale_y_discrete(breaks = seq(0, 33, 1)) +
-  theme(legend.position = c(.15, .85), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
-  theme(legend.key.size =  unit(0.005, "in"))
+  theme(legend.position = c(.15, .89), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
+  theme(legend.key.size =  unit(0.005, "in")) 
 
 
 grid.newpage()
