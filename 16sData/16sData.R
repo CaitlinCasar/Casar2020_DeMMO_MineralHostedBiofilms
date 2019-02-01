@@ -267,6 +267,12 @@ n <- length(unique(family.area$Family))
 palette <- distinctColorPalette(n)
 #pie(rep(1, n), col=palette)
 
+#organize data frame by family and site.exp
+family.area$site.exp <- paste0(family.area$Site, ".", family.area$experiment)
+family.area <- family.area[
+  with(family.area, order(Family, desc(site.exp))),
+  ]
+
 
 #add column of unique numeric sample ID's for area chart (cannot use strings)
 family.area <- cbind(c(1:91), family.area)
@@ -292,10 +298,10 @@ experiment.color.fun <- function(q){
 family.area <- cbind(exp.label.color = apply(family.area, 1, experiment.color.fun),family.area)
 exp.label.color <- with(family.area,setNames(as.character(exp.label.color),as.character(Sample.ID)))
 
-family.area$site.exp <- paste0(family.area$Site, ".", family.area$experiment)
+
 
 #generate family area plot 
-family.area.plot <- ggplot(family.area[order(family.area$site.exp),], aes(x=Sample.ID, y=Abundance, fill=Family)) +
+family.area.plot <- ggplot(family.area[order(family.area$Family),], aes(x=Sample.ID, y=Abundance, fill=Family)) +
   scale_fill_manual(values=palette) +
   geom_area() +
   theme(legend.position="bottom", legend.box = "horizontal") +
