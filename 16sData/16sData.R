@@ -180,19 +180,24 @@ family.bar <-  data[6:ncol(data)] %>%
    select_if(function(col) max(col) > 15)
 family.bar$Less.Abundant.Taxa <- 100-rowSums(family.bar)
 
-#family.bar <- cbind(rownames(data), family.bar)
-#colnames(family.bar)[1] <- "Sample"
+family.bar <- cbind(rownames(data), family.bar)
+colnames(family.bar)[1] <- "Sample"
 
 #convert family.bar to long format   
-#family.bar <- gather(family.bar, Family, Abundance, colnames(family.bar[2]):colnames(family.bar[ncol(family.bar)]), factor_key=TRUE)
+family.bar <- gather(family.bar, Family, Abundance, colnames(family.bar[2]):colnames(family.bar[ncol(family.bar)]), factor_key=TRUE)
 
 #add a column called Sample to store labels, this will ensure the bar plot and dendrogram align on labels
-#family.bar$Sample <- factor(family.bar$Sample, levels = labels(family.dendrogram))
+family.bar$Sample <- factor(family.bar$Sample, levels = labels(family.dendrogram))
 
 #arrange bars in by size 
 #family.bar$Sample <- reorder(family.bar$Sample, family.bar$Abundance)
 #family.bar$Sample <- factor(family.bar$Sample, levels=rev(levels(family.bar$Sample)))
 
+family.bar.plot.15percent <- ggplot(family.bar, aes(fill=Family, y=Abundance, x=Sample)) + 
+  geom_col() + 
+  geom_bar(stat='identity', position='fill') +
+  #scale_fill_viridis_d() +
+  coord_flip()
 
 #filter data for families greater than 1% community - low abundance taxa >15% will be plotted in grayscale
 family.bar.low.ab <-  data[6:ncol(data)] %>%
@@ -237,10 +242,10 @@ family.bar.plot <- ggplot(family.bar.low.ab, aes(fill=Family, y=Abundance, x=Sam
   geom_col() + 
   geom_bar(stat='identity', position='fill') +
   #scale_fill_viridis_d() +
-  coord_flip() +
-  scale_x_discrete(limits = rev(levels(family.bar.plot$Sample))) +
-  scale_fill_manual(values=assigned.mixed.palette) +
-  theme(legend.position="none")
+  coord_flip() #+
+  #scale_x_discrete(limits = rev(levels(family.bar.plot$Sample))) +
+  #scale_fill_manual(values=assigned.mixed.palette) +
+  #theme(legend.position="none")
 
 #plot dendrogram and bar plot side by side 
 dendro.bar.plot <- plot_grid(dendro.plot, family.bar.plot, align = "h")
