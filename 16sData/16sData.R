@@ -9,6 +9,7 @@ library(dendextend)
 library(cowplot)
 library(RColorBrewer)
 library(randomcoloR)
+library(plotly)
 
 #import rarefied family-level OTU table from Qiime 
 raw.data <- read.csv("DeMMO_Dec2015_to_Aug2017_d3581_L5.csv", header=TRUE, row.names = 1)
@@ -145,7 +146,7 @@ NMDS_fun <- function(z){
     geom_point(data=merged_NMDS[which(grepl("800", merged_NMDS$Site)),],inherit.aes = FALSE,aes(x=MDS2, y=MDS1),color=site.palette[4], size=2, alpha=0.8) +
     geom_point(data=merged_NMDS[which(grepl("4800", merged_NMDS$Site)),],inherit.aes = FALSE,aes(x=MDS2, y=MDS1),color=site.palette[5], size=2, alpha=0.8) +
     geom_text(aes(label=paste0(Site, ".", Sample.Type),hjust = 1, vjust = 1),  size=2, color="black") +
-    geom_segment(data=sig_vectors,inherit.aes = FALSE, aes(x=0,xend=MDS2,y=0,yend=MDS1, color=phylum), alpha=0.3)+
+    geom_segment(data=sig_vectors,inherit.aes = FALSE, aes(x=0,xend=MDS2,y=0,yend=MDS1, color=phylum, label=family), alpha=0.3)+
     geom_text(data=sig_vectors[highlight.taxa,],inherit.aes = FALSE,aes(x=MDS2, y=MDS1,label=family),size=4)+
     geom_text(data=sig.vectors.phylum,inherit.aes = FALSE,aes(x=MDS2, y=MDS1,label=phylum),size=2, color="black", alpha=0.3)+
     geom_segment(data=sig_vectors[highlight.taxa,],inherit.aes = FALSE, aes(x=0,xend=MDS2,y=0,yend=MDS1), color="black", size=1, linetype = "dotted")+
@@ -166,6 +167,8 @@ NMDS_plot.pres.abs <- NMDS_fun(data.pres.abs)
 NMDS_plot.data.sqrt <- NMDS_fun(data.sqrt)
 NMDS_plot.data.1.x <- NMDS_fun(data.1.x)
 
+#create interactive html plots 
+ggplotly(NMDS_plot.data.1.x  + theme(legend.position="none"))
 
 ###Dendrogram and bar plots
 
@@ -311,7 +314,7 @@ family.area.plot <- ggplot(family.area[order(family.area$Family),], aes(x=Sample
   geom_area() +
   theme(legend.position="bottom", legend.box = "horizontal") +
   scale_x_discrete(limits=1:length(unique(family.area$Sample.ID)), breaks=as.character(unique(family.area$Sample.ID)),labels=Sample.labels) +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, color=exp.label.color)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, color=exp.label.color, size=3)) +
   geom_vline(xintercept=seq(1, length(unique(family.area$Sample.ID)), by=1), color="white", linetype="dotted")
 
 
