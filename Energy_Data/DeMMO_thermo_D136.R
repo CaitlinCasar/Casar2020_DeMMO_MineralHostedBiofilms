@@ -10,6 +10,7 @@ library(ggplot2)
 library(tidyr)
 library(stringr)
 library(plyr)
+library(dplyr)
 library(grid)
 
 #create thermo database
@@ -691,15 +692,15 @@ deltaG_plot <- ggplot(DeMMO_thermo_data, aes(DeltaG_norm, reorder(rxn.number, -D
   theme(legend.position = c(.1, .84), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
   theme(legend.key.size =  unit(0.1, "in"))
 
-#DeMMO_E_dens <- DeMMO_E_dens %>% select(-DeMMO2_EDdens, -DeMMO4_EDdens, -DeMMO5_EDdens, -DeMMO2_EAdens, -DeMMO4_EAdens, -DeMMO5_EAdens)
+DeMMO_E_dens <- DeMMO_E_dens %>% dplyr::select(-DeMMO2_EDdens, -DeMMO4_EDdens, -DeMMO5_EDdens, -DeMMO2_EAdens, -DeMMO4_EAdens, -DeMMO5_EAdens)
 
 Edens_plot_data <- gather(DeMMO_E_dens, Site, E_dens, DeMMO1_EDdens:DeMMO6_EAdens, factor_key=TRUE)
 Edens_plot_data$Site <- str_replace(Edens_plot_data$Site, "_EDdens", " ")
 Edens_plot_data$Site <- str_replace(Edens_plot_data$Site, "_EAdens", " ")
-Edens_plot_data$Type <- c(rep("ED", 198), rep("EA", 198))
+Edens_plot_data$Type <- c(rep("ED", 99), rep("EA", 99))
 E.donors <- as.vector(reactions$e.donor)
 E.acceptors <- as.vector(reactions$e.acceptor)
-Edens_plot_data$E.donor.acceptor <- c(rep(E.donors, 6), rep(E.acceptors, 6))
+Edens_plot_data$E.donor.acceptor <- c(rep(E.donors, 3), rep(E.acceptors, 3))
 Edens_plot_data$DeltaG_norm <- DeMMO_thermo_data$DeltaG_norm
 Edens_plot_data$E.donor.acceptor <- str_replace(Edens_plot_data$E.donor.acceptor, c("sulfur|pyrite|siderite|hematite|gypsum|magnetite|pyrolusite|Mn[+]2"), " ")
 
@@ -709,9 +710,6 @@ Edens_plot_data$E_dens <- as.numeric(as.character(Edens_plot_data$E_dens))
 
 Edens_plot_data$E.donor.acceptor <- factor(Edens_plot_data$E.donor.acceptor,  levels = c("SO4-2", "NO3-", "CH4", "NH4+", "HS-", "HCO3-","H2", "Fe+2", "acetate"))
 
-Edens_plot_data <- Edens_plot_data %>%
-  filter(Site=="DeMMO1 " | Site=="DeMMO3 " | Site=="DeMMO6 ")
-
 Edens_plot <- ggplot(Edens_plot_data, aes(E_dens, reorder(rxn.number, -DeltaG_norm), shape=Site, group=rxn.number)) +
   theme_gray() +
   geom_line(aes(color=E.donor.acceptor), size=2.5, alpha=0.6) +
@@ -719,7 +717,7 @@ Edens_plot <- ggplot(Edens_plot_data, aes(E_dens, reorder(rxn.number, -DeltaG_no
   scale_shape_manual(values = c(15,16,17)) + 
   coord_cartesian(xlim = c(-5, 2)) +
   xlab("ΔGr (log J/kg H2O)") + 
-  geom_hline(yintercept = c(17,18,21,31), color = "black", linetype="dotted", size=1.5, alpha=0.3) +
+  geom_hline(yintercept = c(14,19,20,30), color = "black", linetype="dotted", size=1.5, alpha=0.3) +
   theme(panel.grid.minor = element_line(colour="white", size=0.5)) +
   theme(axis.title.y = element_blank()) +
   scale_y_discrete(breaks = seq(0, 33, 1)) +

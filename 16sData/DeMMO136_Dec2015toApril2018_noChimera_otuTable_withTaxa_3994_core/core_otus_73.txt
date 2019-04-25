@@ -1,0 +1,6 @@
+# Core OTUs across 73 % of samples.
+OTU_4	['D_0__Bacteria', 'D_1__Proteobacteria', 'D_2__Gammaproteobacteria', 'D_3__Betaproteobacteriales', 'D_4__Gallionellaceae', 'D_5__Sideroxydans']
+OTU_5	['D_0__Bacteria', 'D_1__Proteobacteria', 'D_2__Gammaproteobacteria', 'D_3__Betaproteobacteriales', 'D_4__Hydrogenophilaceae', 'D_5__Thiobacillus']
+OTU_29	['D_0__Bacteria', 'D_1__Nitrospirae', 'D_2__Thermodesulfovibrionia', 'D_3__uncultured']
+OTU_4599	['D_0__Bacteria', 'D_1__Proteobacteria', 'D_2__Gammaproteobacteria', 'D_3__Betaproteobacteriales', 'D_4__Hydrogenophilaceae', 'D_5__Thiobacillus']
+OTU_9	['D_0__Bacteria', 'D_1__Chloroflexi', 'D_2__Anaerolineae', 'D_3__Anaerolineales', 'D_4__Anaerolineaceae', 'D_5__uncultured']

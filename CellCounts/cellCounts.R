@@ -17,16 +17,19 @@ cell.density.data$Site.Date <- paste(cell.density.data$Site, cell.density.data$D
 cell.density.data <- cell.density.data[order(cell.density.data$Site.Date),] 
 #cell.density.data$Site.Date <- factor(cell.density.data$Site.Date, levels=c("D3.2017-02", "D6.2017-02", "D1.2017-08","D3.2017-08", "D1.2017-11", "D3.2017-11"))
 
-cell.density.plot <- ggplot(cell.density.data, aes(Cell.density.sq.mm, Exp.Type), shape=Site, group=Mineral) +
+cell.density.plot <- ggplot(cell.density.data, aes(Cell.density.sq.mm, reorder(Exp.Type, -Cell.density.sq.mm)), shape=Site, group=Mineral) +
   geom_line(aes(color=Mineral), size=2.5, alpha=0.6) +
   geom_point(aes(shape=Site, label=Date.Deployed)) + 
-  scale_shape_manual(values=c(15,16,17))
-  xlab("Cell density (cells/mm^2)") +
+  scale_shape_manual(values=c(15,16,17)) +
+  xlab("Cell density (10^4 cells/mm^2)") +
+  scale_x_continuous(
+      breaks = c(0, 20000, 40000, 60000),
+      label = c(0, 2, 4, 6)) +
   theme_gray()
   #theme(axis.title.y=element_blank(), legend.position = "none") 
 
-
-ggplotly(cell.density.plot)
+cell.density.plot +  facet_grid(cols = vars(Site))
+ggplotly(cell.density.plot +  facet_grid(cols = vars(Site)))
 
 
 density.vs.date <- ggplot(cell.density.data, aes(Site.Date, Cell.density.sq.mm), group=Mineral) +
