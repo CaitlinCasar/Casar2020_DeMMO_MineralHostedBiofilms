@@ -192,7 +192,8 @@ deltaG_plot <- ggplot(DeMMO_thermo_data, aes(DeltaG_norm, reorder(rxn.number, -D
   geom_point() + 
   scale_shape_manual(values = c(15,16,17)) + 
   scale_x_reverse() +
-  xlab("ΔGr (kJ/mol e-)") + 
+  #xlab(expression(delta),"Gr (kJ/mol e-)") + 
+  labs(x=expression(Delta~G[r]~'kJ/mol'~e^{textstyle("-")})) +
   ylab("Reaction #") +
   geom_vline(xintercept = 0, linetype="dotted", color = "black") +
   theme(legend.position = c(.1, .84), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
@@ -239,13 +240,14 @@ Edens_plot <- ggplot(DeMMO_Edens_data, aes(E_dens, reorder(rxn.number, -DeltaG_n
   geom_point(show.legend = FALSE) + 
   scale_shape_manual(values = c(15,16,17)) + 
   coord_cartesian(xlim = c(-6.5, 3)) +
-  xlab("ΔGr (log J/kg H2O)") + 
+  labs(x=expression(Delta~G[r]~log~'J/kg'~H[2]~'O')) +
   geom_hline(yintercept = match(sulfur.rxns, ordered.data), color = "black", linetype="dotted", size=1.5, alpha=0.3) +
   theme(panel.grid.minor = element_line(colour="white", size=0.5)) +
   theme(axis.title.y = element_blank()) +
   scale_y_discrete(breaks = seq(0, nrow(reactions), 1)) +
-  theme(legend.position = c(.15, .2), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
-  theme(legend.key.size =  unit(0.005, "in"))
+  theme(legend.position = c(.15, .2), legend.text=element_text(size=6), 
+        legend.title = element_text(size=8, face="bold"),
+        legend.key.size =  unit(0.005, "in")) 
 
 
 grid.newpage()

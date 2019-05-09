@@ -11,6 +11,12 @@ library(RColorBrewer)
 library(randomcoloR)
 library(plotly)
 library(directlabels)
+library(devtools)
+library(taRifx)
+
+#install scripts for SIMPER and kruskal-wallis tests
+source_url("https://raw.githubusercontent.com/kdillmcfarland/workshops_UW_Madison/master/Microbiota_analysis_R/Steinberger_scripts/simper_pretty.R")
+source_url("https://raw.githubusercontent.com/kdillmcfarland/workshops_UW_Madison/master/Microbiota_analysis_R/Steinberger_scripts/R_krusk.R")
 
 #import rarefied family-level OTU table from Qiime 
 raw.data <- read.csv("DeMMO136_Dec2015toApril2018_noChimera_otuTable_withTaxa_d10000_categorized_L5.csv", header=TRUE, row.names = 1)
@@ -226,11 +232,13 @@ rownames(subset.data) <- gsub("[.]0.*", '', rownames(subset.data))
 family.dendrogram <- as.dendrogram(hclust(bcdist(subset.data)))
 
 #generate dendrogram
-dendro.plot <- ggplot(family.dendrogram, horiz = T) + theme_gray()
+dendro.plot <- ggplot(family.dendrogram, horiz = T) + #, labels=FALSE) + 
+  #scale_x_reverse() +
+  theme_gray()
 
-#select rows where min abundance is greater than 10%
+#select rows where min abundance is greater than 5%
 family.bar <-  subset.data %>%
-   select_if(function(col) max(col) > 10)
+   select_if(function(col) max(col) > 5)
 family.bar$Less.Abundant.Taxa <- 100-rowSums(family.bar)
 
 family.bar <- cbind(rownames(family.bar), family.bar)
@@ -261,16 +269,17 @@ names(family.colors) <- as.character(family.colors.data$Family)
 unique(family.bar$Family)[(!unique(family.bar$Family) %in% family.colors.data$Family)]
 
 #generate family bar plot 
-family.bar.plot.10percent <- ggplot(family.bar, aes(fill=Family, y=Abundance, x=Sample)) + 
+family.bar.plot.5percent <- ggplot(family.bar, aes(fill=Family, y=Abundance, x=Sample)) + 
   theme_gray() +
   geom_bar(stat='identity', position='fill') +
   #scale_fill_viridis_d() +
   scale_fill_manual(values=family.colors) +
   coord_flip() +
-  theme(text = element_text(size=5), legend.position = "none")
+  theme(text = element_text(size=5), legend.position = "none",
+        axis.title.y=element_blank())
 
 #plot dendrogram and bar plot side by side 
-dendro.bar.plot <- plot_grid(dendro.plot, family.bar.plot.10percent, align = "h")
+dendro.bar.plot <- plot_grid(dendro.plot, family.bar.plot.5percent, align = "h")
 
 #filter data for families greater than 1% community - low abundance taxa >15% will be plotted in grayscale
 family.bar.low.ab <-  data[6:ncol(data)] %>%
@@ -567,11 +576,236 @@ diversity.ranking$site.type <- paste0(diversity.ranking$Site, ".",diversity.rank
 diversity.ranking$rarefaction.depth <- as.character(diversity.ranking$rarefaction.depth)
 diversity.ranking$Site.experiment <- gsub("800.cont.control|D3.cont.control|4100L.fluid|4800.cont.control", "ambient.control", diversity.ranking$Site.experiment)
 
-diversity.plot <- ggplot(diversity.ranking, aes(x=reorder(Site.experiment, -OTU.abundance), y=OTU.abundance, fill=Site.experiment)) + 
-  geom_violin() +
-  geom_boxplot(width=0.1) +
+diversity.plot <- ggplot(diversity.ranking, aes(x=reorder(Site.experiment, -OTU.abundance), y=OTU.abundance, fill=Site)) + 
+  geom_violin(lwd=.1) +
+  stat_summary(fun.y=mean, geom="point", size=1, color="white") +
+  #geom_boxplot(width=0.1) +
   #geom_dotplot(binaxis='y', stackdir='center', dotsize=0.1) +
-  geom_jitter(shape=16, position=position_jitter(0.2)) +
-  coord_flip() +
+  geom_jitter(shape=16, position=position_jitter(0.2), size=1, stroke=0) +
   theme_grey() +
-  theme(legend.position = "none") 
+  theme(legend.position = "none",
+        axis.title.y=element_blank()) +
+  coord_flip() +
+  labs(x="OTU abundance") 
+
+
+
+#test for normality 
+
+shannon.div <- as.data.frame(diversity(data[6:ncol(data)], index = "shannon", MARGIN = 1, base = exp(1)))
+simpson.div <- as.data.frame(diversity(data[6:ncol(data)], index = "simpson", MARGIN = 1, base = exp(1)))
+chao.rich <-specpool(data[6:ncol(data)], as.vector(colnames(data.rel.abundance)))
+
+hist(shannon.div$`diversity(data[6:ncol(data)], index = "shannon", MARGIN = 1, base = exp(1))`, main="Shannon diversity", xlab="", breaks=10)
+hist(simpson.div$`diversity(data[6:ncol(data)], index = "simpson", MARGIN = 1, base = exp(1))`, main="Simpson diversity", xlab="", breaks=10)
+hist(chao.rich$chao, main="Chao richness", xlab="", breaks=15)
+hist(chao.rich$jack1, main="jack richness", xlab="", breaks=15)
+
+
+#https://rstudio-pubs-static.s3.amazonaws.com/268156_d3ea37937f4f4469839ab6fa2c483842.html
+#SIMPER
+
+meta <- data[1:5] 
+meta <- cbind(site.sample.type = paste0(meta$Site, '.',meta$Sample.Type), meta)
+meta <- remove.factors(meta)
+meta[74:77,1] <- "ambient.control"
+meta[74:77,3] <- "ambient.control"
+meta$Site.experiment <- as.factor(meta$Site.experiment)
+meta$site.sample.type <- as.factor(meta$site.sample.type)
+
+meta <- meta %>% filter(Sample.Type %in% c("fluid", "sand", "3mmPyrex", "5mmPyrex", "wool", "pyrolusite"))
+data.rel.abundance <- data.rel.abundance[grep("fluid|sand|3mmPyrex|5mmPyrex|wool|pyrolusite",colnames(data.rel.abundance))]
+
+simper.pretty(data.rel.abundance, meta, c('site.sample.type'), perc_cutoff=1, low_cutoff = 'n', output_name = 'site.sample.type')
+
+simper.results = data.frame(read.csv("site.sample.type_clean_simper.csv"))
+kruskal.pretty(data.rel.abundance, meta, simper.results, c('site.sample.type'), 'site.sample.type')
+
+#Import
+KW.results = data.frame(read.csv("site.sample.type_krusk_simper.csv"))
+#Remove non-significant
+KW.results.signif = KW.results[KW.results$fdr_krusk_p.val < 0.05,]
+#Order by OTU#
+KW.results.signif = KW.results.signif[with(KW.results.signif, order(OTU)),]
+head(KW.results.signif)
+
+KW.results.signif <- subset(KW.results.signif, select = -c(Taxonomy))
+KW.results.signif <- na.omit(KW.results.signif)
+
+all.comparisons <- KW.results.signif %>% filter(Comparison %in% c("D1.fluid_D1.mineral", "D3.fluid_D3.mineral", "D6.fluid_D6.mineral",
+                                                                     "D1.inert.control_D1.mineral", "D3.inert.control_D3.mineral", "D6.inert.control_D6.mineral",
+                                                                     "D1.fluid_D1.inert.control", "D3.fluid_D3.inert.control", "D6.fluid_D6.inert.control")) 
+all.comparisons$Left.mean.abund <- all.comparisons$Left.mean.abund*100
+all.comparisons$Right.mean.abund <- all.comparisons$Right.mean.abund*100
+all.comparisons <- spread(all.comparisons, Comparison, fdr_krusk_p.val)
+vinn.data <- all.comparisons %>% select(OTU,D1.fluid_D1.mineral, D3.fluid_D3.mineral, D6.fluid_D6.mineral,
+                                                                     D1.inert.control_D1.mineral, D3.inert.control_D3.mineral, D6.inert.control_D6.mineral,
+                                        D1.fluid_D1.inert.control,D3.fluid_D3.inert.control, D6.fluid_D6.inert.control)
+vinn.data <- vinn.data %>% group_by(OTU) %>%
+  summarise_each(funs(toString))
+
+vinn.data$D1.fluid_D1.mineral <- gsub("NA|[,]| ", "", vinn.data$D1.fluid_D1.mineral)
+vinn.data$D3.fluid_D3.mineral <- gsub("NA|[,]| ", "", vinn.data$D3.fluid_D3.mineral)
+vinn.data$D6.fluid_D6.mineral <- gsub("NA|[,]| ", "", vinn.data$D6.fluid_D6.mineral)
+vinn.data$D1.inert.control_D1.mineral <- gsub("NA|[,]| ", "", vinn.data$D1.inert.control_D1.mineral)
+vinn.data$D3.inert.control_D3.mineral <- gsub("NA|[,]| ", "", vinn.data$D3.inert.control_D3.mineral)
+vinn.data$D6.inert.control_D6.mineral <- gsub("NA|[,]| ", "", vinn.data$D6.inert.control_D6.mineral)
+vinn.data$D1.fluid_D1.inert.control <- gsub("NA|[,]| ", "", vinn.data$D1.fluid_D1.inert.control)
+vinn.data$D3.fluid_D3.inert.control <- gsub("NA|[,]| ", "", vinn.data$D3.fluid_D3.inert.control)
+vinn.data$D6.fluid_D6.inert.control <- gsub("NA|[,]| ", "", vinn.data$D6.fluid_D6.inert.control)
+vinn.data[2:ncol(vinn.data)] <- as.numeric(unlist(vinn.data[2:ncol(vinn.data)]))
+
+
+vinn.data[2:ncol(vinn.data)] = ifelse(vinn.data[2:ncol(vinn.data)]  > 0, 1, 0)
+vinn.data[is.na(vinn.data)] <- 0
+vinn.data <- colSums(vinn.data[,-1])
+
+all.comparisons <- all.comparisons %>% filter(Left.mean.abund > 0.75 | Right.mean.abund > 0.75)
+subset.taxa.to.compare <- unique(all.comparisons$OTU)
+
+all.comparisons <- KW.results.signif %>% filter(Comparison %in% c("D1.fluid_D1.mineral", "D3.fluid_D3.mineral", "D6.fluid_D6.mineral",
+                                                                  "D1.inert.control_D1.mineral", "D3.inert.control_D3.mineral", "D6.inert.control_D6.mineral",
+                                                                  "D1.fluid_D1.inert.control", "D3.fluid_D3.inert.control", "D6.fluid_D6.inert.control")) 
+all.comparisons$Left.mean.abund <- all.comparisons$Left.mean.abund*100
+all.comparisons$Right.mean.abund <- all.comparisons$Right.mean.abund*100
+all.comparisons <- all.comparisons %>% filter(OTU %in% subset.taxa.to.compare)
+all.comparisons <- cbind(phylum = gsub( "[.].*$", "", all.comparisons$OTU), all.comparisons)
+
+
+all.comparisons.plot <- ggplot(all.comparisons, aes(reorder(OTU, phylum), Left.mean.abund, color=phylum)) +
+  theme_gray() +
+  geom_segment(aes(xend=OTU, yend=Right.mean.abund), arrow = arrow(length = unit(0.3,"cm"))) +
+  xlab("mean abundance") + 
+  theme(axis.title.y = element_blank()) +
+  theme(legend.position = "none", 
+        text = element_text(size=6)) +
+  coord_flip()
+
+all.comparisons.plot +  facet_grid(cols = vars(Comparison))
+
+
+
+length(unique(gsub( "[.].*$", "", rownames(data.rel.abundance))))
+
+
+
+library(VennDiagram)
+
+#Then generate 3 sets of words.There I generate 3 times 200 SNPs names.
+SNP_pop_1=paste(rep("SNP_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+SNP_pop_2=paste(rep("SNP_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+SNP_pop_3=paste(rep("SNP_" , 200) , sample(c(1:1000) , 200 , replace=F) , sep="")
+
+#The goal of the Venn Diagram is to count how many words are common between SNP_pop_1 and SNP_pop_2, between SNP_pop_1 and SNP_pop_3 and so on...
+#The venn.diagram function do it automatically and draw it! (you will get a png file in your current working directory)
+
+venn.diagram(
+  x = list(SNP_pop_1 , SNP_pop_2 , SNP_pop_3),
+  category.names = c("SNP pop 1" , "SNP pop 2 " , "SNP pop 3"),
+  filename = '#14_venn_diagramm.png',
+  output = TRUE ,
+  imagetype="png" ,
+  height = 480 , 
+  width = 480 , 
+  resolution = 300,
+  compression = "lzw",
+  lwd = 2,
+  lty = 'blank',
+  fill = c('yellow', 'purple', 'green'),
+  cex = 1,
+  fontface = "bold",
+  fontfamily = "sans",
+  cat.cex = 0.6,
+  cat.fontface = "bold",
+  cat.default.pos = "outer",
+  cat.pos = c(-27, 27, 135),
+  cat.dist = c(0.055, 0.055, 0.085),
+  cat.fontfamily = "sans",
+  rotation = 1
+)
+
+
+#DeMMO experiments with native rock
+rock.data <- read.csv("DeMMO136_Dec2015toApril2018_noChimera_otuTable_withTaxa_d10000_categorized_L5.csv", header=TRUE, row.names = 1)
+
+#clean up sample ID's and remove unwanted columns 
+colnames(rock.data) = gsub("X", "", colnames(rock.data))
+rock.data <- rock.data[, grep("8.DeMMO3.T1.top.083017|10.DeMMO3.T2.top.083017|12.DeMMO3.T3.top.083017|14.DeMMO3.T4.top.083017|16.DeMMO3.T5.top.083017|42.DeMMO3.4.top.041718|43.DeMMO3.5.top.041718|48.DeMMO1.10.top.041818|49.DeMMO1.11.top.041818|50.DeMMO1.12.top.041818", colnames(rock.data))]
+colnames(rock.data) = gsub("10dash1", "DeMMO1", colnames(rock.data))
+colnames(rock.data) = gsub("24790", "DeMMO3", colnames(rock.data))
+colnames(rock.data) = gsub("DuselB", "DeMMO6", colnames(rock.data))
+colnames(rock.data) = gsub(".D1.", ".", colnames(rock.data))
+
+
+colnames(rock.data) <- gsub("T1", "Homestake", colnames(rock.data))
+colnames(rock.data) <- gsub("T3", "Poorman", colnames(rock.data))
+colnames(rock.data) <- gsub("T4", "Yates", colnames(rock.data))
+colnames(rock.data) <- gsub("[.]4[.]|[.]10[.]", ".Yates.", colnames(rock.data))
+colnames(rock.data) <- gsub("T5", "Sand", colnames(rock.data))
+colnames(rock.data) <- gsub("[.]12[.]", ".Sand.", colnames(rock.data))
+colnames(rock.data) <- gsub("T2|11", "Ellison", colnames(rock.data))
+colnames(rock.data) <- gsub("[.]5[.]", ".Ellison.", colnames(rock.data))
+colnames(rock.data) <- gsub("DeMMO", "D", colnames(rock.data))
+colnames(rock.data) <- gsub("[.]top", "", colnames(rock.data))
+
+#format taxa names 
+row.names(rock.data) <- gsub("D_0__Archaea;Other;Other;Other;Other", "Archaea.Other", row.names(rock.data))
+row.names(rock.data) <- gsub("D_0__Bacteria;Other;Other;Other;Other", "Bacteria.Other", row.names(rock.dataa))
+row.names(rock.data) <- gsub("D_0__Bacteria;D_1__Proteobacteria;Other;Other;Other", "Proteobacteria.Other", row.names(rock.data))
+row.names(rock.data) <- gsub("D_0__Archaea;|D_0__Bacteria;|D_1__Proteobacteria;|D_1__|D_2__|D_3__|D_4__|D_5__", "", row.names(rock.data))
+row.names(rock.data) <- gsub("Unknown;Other;Other;Other;Other", "Unassigned",row.names(rock.data))
+row.names(rock.data) <- gsub(";", ".",row.names(rock.data))
+row.names(rock.data) <- gsub("Gammaproteobacteria.Betaproteobacteriales", "Betaproteobacteria.Betaproteobacteriales",row.names(rock.data))
+
+rock.data= rock.dataa[ rowSums(rock.data)!=0, ] 
+
+#convert absolute abundanes to relative abundances - note that colsums = 100 (not 1)
+rock.data.rel.abundance <- rock.data %>%
+  mutate_at(vars(1:length(colnames(rock.data))), funs(as.numeric(paste0(100*./sum(.)))))
+rownames(rock.data.rel.abundance) <- rownames(rock.data)
+
+#transform data and separate name into metadata columns
+rock.data.all <- as.data.frame(t(rock.data.rel.abundance))
+rock.data.all  <- cbind(Sample.ID = rownames(rock.data.all ), rock.data.all)
+rock.data.all  <- rock.data.all %>% separate(Sample.ID, c("Sample.Number", "Site", "Sample.Type", "Sample.Date"))
+rock.data.all$Sample.Date <- paste0(lubridate::month(mdy(rock.data.all$Sample.Date), label = TRUE),".", year(mdy(rock.data.all$Sample.Date)))
+
+
+rock.family.dendrogram <- as.dendrogram(hclust(bcdist(rock.data.all[5:ncol(rock.data.all)])))
+
+#generate dendrogram
+rock.dendro.plot <- ggplot(rock.family.dendrogram, horiz = T) + #, labels=FALSE) + 
+  #scale_x_reverse() +
+  theme_gray()
+
+#select rows where min abundance is greater than 5%
+rock.family.bar <-  rock.data.all %>%
+  select_if(function(col) max(col) > 5)
+rock.family.bar$Less.Abundant.Taxa <- 100-rowSums(rock.family.bar[5:ncol(rock.family.bar)])
+
+rock.family.bar <- cbind(rownames(rock.family.bar), rock.family.bar)
+colnames(rock.family.bar)[1] <- "Sample"
+
+#convert family.bar to long format   
+rock.family.bar <- gather(rock.family.bar, Family, Abundance, colnames(rock.family.bar[6]):colnames(rock.family.bar[ncol(rock.family.bar)]), factor_key=TRUE)
+
+#add a column called Sample to store labels, this will ensure the bar plot and dendrogram align on labels
+rock.family.bar$Sample <- factor(rock.family.bar$Sample, levels = labels(rock.family.dendrogram))
+
+#generate color palette for family >10% community
+n <- length(unique(rock.family.bar$Family))
+palette <- distinctColorPalette(n)
+
+
+#generate family bar plot 
+rock.family.bar.plot.5percent <- ggplot(rock.family.bar, aes(fill=Family, y=Abundance, x=Sample)) + 
+  theme_gray() +
+  geom_bar(stat='identity', position='fill') +
+  scale_fill_manual(values=family.colors) +
+  coord_flip() +
+  theme(text = element_text(size=5), legend.position = "none",
+        axis.title.y=element_blank())
+
+#plot dendrogram and bar plot side by side 
+rock.dendro.bar.plot <- plot_grid(rock.dendro.plot, rock.family.bar.plot.5percent, align = "h")
+
