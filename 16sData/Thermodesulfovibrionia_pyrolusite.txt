@@ -1,0 +1,35 @@
+	Abundance	Description	Max Score	Total Score	Query Cover	E value	Per. Ident	Accession	Info							
+OTU_124	0.01	"Thermodesulfovibrio thiophilus strain TDV 16S ribosomal RNA, partial sequence"	274	274	100%	2.00E-73	86.22%	NR_041317.1								
+OTU_125	0.17	"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	274	274	100%	2.00E-73	86.22%	NR_040795.1								
+OTU_1338	0.01	"Thermodesulfovibrio yellowstonii strain DSM 11347 16S ribosomal RNA, partial sequence"	252	252	100%	8.00E-67	84.58%	NR_074345.1								
+		"Thermodesulfovibrio yellowstonii strain YP87 16S ribosomal RNA, partial sequence"	252	252	100%	8.00E-67	84.58%	NR_041318.1								
+OTU_17	2.28	"Deferrisoma camini S3R1 16S ribosomal RNA, partial sequence"	228	228	97%	1.00E-59	83.47%	NR_118216.1								
+OTU_1767	0.03	"Deferrisoma camini S3R1 16S ribosomal RNA, partial sequence"	239	239	97%	6.00E-63	84.34%	NR_118216.1								
+OTU_18	9.09	"Thermodesulfovibrio hydrogeniphilus DSM 18151 strain Hbr5 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.88%	NR_044075.1	thermophilic sulphate-reducing bacterium isolated from a Tunisian hot spring							
+OTU_19	44.62	"Deferrisoma camini S3R1 16S ribosomal RNA, partial sequence"	235	235	98%	8.00E-62	83.94%	NR_118216.1	"moderately thermophilic, dissimilatory iron(III)-reducing bacterium from a deep-sea hydrothermal vent that forms a distinct phylogenetic branch in the Deltaproteobacteria"							
+OTU_21	3.44	"Salinispirillum marinum strain GCWy1 16S ribosomal RNA, partial sequence"	244	244	97%	1.00E-64	84.74%	NR_134169.1								
+		"Desulfobotulus sapovorans strain 1pa3 16S ribosomal RNA, partial sequence"	244	244	97%	1.00E-64	84.80%	NR_044601.1								
+		"Desulfobotulus alkaliphilus strain ASO4-4 16S ribosomal RNA, partial sequence"	244	244	97%	1.00E-64	84.74%	NR_116806.1								
+OTU_22	1.27	"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	252	252	100%	8.00E-67	84.58%	NR_040795.1								
+OTU_2317	0.01	"Irregularibacter muris strain 2PG-426-CC-4.2 16S ribosomal RNA, partial sequence"	243	243	98%	5.00E-64	84.40%	NR_144613.1								
+OTU_255	0.5	"Thermodesulfovibrio yellowstonii strain DSM 11347 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.77%	NR_074345.1								
+		"Thermodesulfovibrio yellowstonii strain YP87 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.77%	NR_041318.1								
+OTU_2628	0.01	"Thermodesulfovibrio hydrogeniphilus DSM 18151 strain Hbr5 16S ribosomal RNA, partial sequence"	278	278	99%	1.00E-74	86.56%	NR_044075.1								
+OTU_28	1.87	"Deferrisoma camini S3R1 16S ribosomal RNA, partial sequence"	239	239	97%	6.00E-63	84.34%	NR_118216.1	"moderately thermophilic, dissimilatory iron(III)-reducing bacterium from a deep-sea hydrothermal vent that forms a distinct phylogenetic branch in the Deltaproteobacteria"							
+OTU_29	0.25	"Desulfohalotomaculum peckii strain LINDBHT1 16S ribosomal RNA, partial sequence"	226	226	98%	5.00E-59	83.40%	NR_109724.1								
+OTU_308	0.01	"Thermodesulfovibrio yellowstonii strain DSM 11347 16S ribosomal RNA, partial sequence"	257	257	100%	2.00E-68	84.98%	NR_074345.1								
+		"Thermodesulfovibrio yellowstonii strain YP87 16S ribosomal RNA, partial sequence"	257	257	100%	2.00E-68	84.98%	NR_041318.1								
+OTU_319	0.01	"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	307	307	100%	2.00E-83	88.54%	NR_040795.1								
+OTU_3331	0.02	"Thermodesulfovibrio yellowstonii strain DSM 11347 16S ribosomal RNA, partial sequence"	274	274	100%	2.00E-73	86.17%	NR_074345.1								
+		"Thermodesulfovibrio yellowstonii strain YP87 16S ribosomal RNA, partial sequence"	274	274	100%	2.00E-73	86.17%	NR_041318.1								
+OTU_520	0.01	"Natronovirga wadinatrunensis strain JW/NM-WN-LH1 16S ribosomal RNA, partial sequence"	219	219	98%	8.00E-57	82.61%	NR_116279.1								
+OTU_55	0.07	"Thermodesulfovibrio yellowstonii strain DSM 11347 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.77%	NR_074345.1								
+		"Thermodesulfovibrio yellowstonii strain YP87 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.77%	NR_041318.1								
+		"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	268	268	100%	8.00E-72	85.77%	NR_040795.1								
+OTU_5659	0.02	"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	255	255	99%	6.00E-68	84.98%	NR_040795.1								
+OTU_5810	0.04	"Thermodesulfovibrio hydrogeniphilus DSM 18151 strain Hbr5 16S ribosomal RNA, partial sequence"	244	244	99%	1.00E-64	84.25%	NR_044075.1								
+		"Thermodesulfovibrio aggregans strain TGE-P1 16S ribosomal RNA, partial sequence"	244	244	99%	1.00E-64	84.19%	NR_040795.1								
+OTU_6400	0.26	"Deferrisoma camini S3R1 16S ribosomal RNA, partial sequence"	233	233	99%	3.00E-61	83.40%	NR_118216.1								
+OTU_6476	0.21	"Desulfobotulus sapovorans strain DSM 2055 16S ribosomal RNA, partial sequence"	209	209	97%	5.00E-54	81.93%	NR_117108.1								
+		"Rhabdanaerobium thermarum strain SYSU GA15001 16S ribosomal RNA, complete sequence"	207	207	95%	2.00E-53	82.38%	NR_159146.1								
+OTU_66	0.51	"Irregularibacter muris strain 2PG-426-CC-4.2 16S ribosomal RNA, partial sequence"	226	226	98%	5.00E-59	83.06%	NR_144613.1								

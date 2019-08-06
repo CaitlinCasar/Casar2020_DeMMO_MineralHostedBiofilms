@@ -1,0 +1,86 @@
+Site,Tube,Date Deployed,Date Collected,Mineral,Experiment,Type,Duration.days,Cell.density.sq.cm,cells.counted
+DeMMO 1,7 Large,31-Aug-17,18-Apr-18,calcite,mineral,Exp,231,44706.55985,29
+DeMMO 1,7 Large,31-Aug-17,18-Apr-18,calcite,mineral,Rep,231,201609.589,192
+DeMMO 1,7 Large,31-Aug-17,18-Apr-18,calcite,control,Internal Control,231,87539.681,81
+DeMMO 1,9 Large,31-Aug-17,18-Apr-18,muscovite,mineral,Exp,231,693988.1357,449
+DeMMO 1,9 Large,31-Aug-17,18-Apr-18,muscovite,mineral,Rep,231,552355.7849,298
+DeMMO 1,9 Large,31-Aug-17,18-Apr-18,muscovite,control,Internal Control,231,93754.45919,75
+DeMMO 1,12 Large,31-Aug-17,18-Apr-18,control sand,Control,Control,231,4819276.185,1559
+DeMMO 1,12 Large,31-Aug-17,18-Apr-18,control sand,control,Control Rep,231,,NA
+DeMMO 1,SC 1,31-Aug-17,18-Apr-18,pyrolusite,mineral,exp,231,5234967.86,4155
+DeMMO 1,SC 1,31-Aug-17,18-Apr-18,pyrolusite,control,Internal Control,231,2147298.779,1684
+DeMMO 1,SC 2,31-Aug-17,18-Apr-18,siderite,mineral,Exp,231,1073703.3,472
+DeMMO 1,SC 2,31-Aug-17,18-Apr-18,siderite,control,Internal Control,231,997547.4458,760
+DeMMO 1,SC 3,31-Aug-17,18-Apr-18,pyrite,mineral,exp,231,364921.0184,323
+DeMMO 1,SC 3,31-Aug-17,18-Apr-18,pyrite,control,Internal Control,231,1207557.434,828
+DeMMO 1,SC 4,31-Aug-17,18-Apr-18,hematite,mineral,exp,231,1609648.157,1440
+DeMMO 1,SC 4,31-Aug-17,18-Apr-18,hematite,control,Internal Control,231,914101.6013,839
+DeMMO 1,SC 5,31-Aug-17,18-Apr-18,magnetite,mineral,exp,231,322035.7189,283
+DeMMO 1,SC 5,31-Aug-17,18-Apr-18,magnetite,control,Internal Control,231,6766988.521,2320
+DeMMO 1,SC 10,31-Aug-17,18-Apr-18,control sand,Control,Control,231,2329201.692,1952
+DeMMO 1,SC 10,31-Aug-17,18-Apr-18,control sand,control,Control Rep,231,6982832.12,2660
+DeMMO 1,A,30-Nov-17,18-Apr-18,Pyrolusite,mineral,Exp,201,323737.1575,210
+DeMMO 1,A,30-Nov-17,18-Apr-18,pyrolusite,control,Internal Control,201,192072.7219,128
+DeMMO 1,C,30-Nov-17,18-Apr-18,Pyrite,mineral,Exp,201,1008210.005,327
+DeMMO 1,C,30-Nov-17,18-Apr-18,pyrite,control,Internal Control,201,197815.1447,151
+DeMMO 1,D,30-Nov-17,18-Apr-18,Hematite,mineral,Exp,201,112537.2024,73
+DeMMO 1,D,30-Nov-17,18-Apr-18,hematite,control,Internal Control,201,581427.6475,284
+DeMMO 1,E,30-Nov-17,18-Apr-18,Magnetite,mineral,Exp,201,94037.93624,61
+DeMMO 1,E,30-Nov-17,18-Apr-18,magnetite,control,Internal Control,201,251459.3284,182
+DeMMO 1,F,30-Nov-17,18-Apr-18,sand,Control,Control,201,267512.7236,214
+DeMMO 1,F,30-Nov-17,18-Apr-18,sand,control,control rep,201,1743471.307,564
+Demmo 3,7,15-Feb-17,11-May-17,Pyrolusite,mineral,Exp,85,980461.1057,318
+Demmo 3,7,15-Feb-17,11-May-17,Pyrolusite,mineral,Rep,85,408733.4231,119
+Demmo 3,7,15-Feb-17,11-May-17,pyrolusite,control,Internal Control,85,,NA
+Demmo 3,8,15-Feb-17,11-May-17,Siderite,mineral,Exp,85,152618.9457,99
+Demmo 3,8,15-Feb-17,11-May-17,Siderite,mineral,Rep,85,90264.82656,73
+Demmo 3,8,15-Feb-17,11-May-17,siderite,control,Internal Control,85,143743.645,93
+Demmo 3,9,15-Feb-17,11-May-17,Pyrite,mineral,Exp,85,669056.7922,434
+Demmo 3,9,15-Feb-17,11-May-17,Pyrite,mineral,Rep,85,336070.0016,218
+Demmo 3,9,15-Feb-17,11-May-17,pyrite,control,Internal Control,85,200408.7166,130
+Demmo 3,10,15-Feb-17,11-May-17,Hematite,mineral,Exp,85,200408.7166,130
+Demmo 3,10,15-Feb-17,11-May-17,Hematite,mineral,Rep,85,42153.56159,30
+Demmo 3,10,15-Feb-17,11-May-17,hematite,control,Internal Control,85,,NA
+Demmo 3,11,15-Feb-17,11-May-17,Magnetite,mineral,Exp,85,168035.0008,109
+Demmo 3,11,15-Feb-17,11-May-17,Magnetite,mineral,Rep,85,1672372.3,541
+Demmo 3,11,15-Feb-17,11-May-17,magnetite,control,Internal Control,85,129832.9697,84
+Demmo 3,12,15-Feb-17,11-May-17,control sand,Control,Control,85,222570.8052,144
+Demmo 3,12,15-Feb-17,11-May-17,control sand,control,Control Rep,85,136015.4921,88
+DeMMO 3,1 Large,30-Aug-17,17-Apr-18,calcite,mineral,Exp,231,204023.2381,132
+DeMMO 3,1 Large,30-Aug-17,17-Apr-18,calcite,mineral,Rep,231,136451.8918,97
+DeMMO 3,1 Large,30-Aug-17,17-Apr-18,calcite,control,Internal Control,231,151471.798,98
+DeMMO 3,3 Large,30-Aug-17,17-Apr-18,muscovite,mineral,Exp,231,344675.622,223
+DeMMO 3,3 Large,30-Aug-17,17-Apr-18,muscovite,mineral,Rep,231,363818.9008,236
+DeMMO 3,3 Large,30-Aug-17,17-Apr-18,muscovite,control,Internal Control,231,86849.71896,59
+DeMMO 3,6 Large,30-Aug-17,17-Apr-18,control sand,Control,Control,231,,NA
+DeMMO 3,6 Large,30-Aug-17,17-Apr-18,control sand,control,Control Rep,231,111285.4026,72
+DeMMO 3,A,27-Nov-17,17-Apr-18,pyrolusite,mineral,exp,199,400841.3685,894
+DeMMO 3,A,27-Nov-17,17-Apr-18,pyrolusite,control,Internal Control,199,,NA
+DeMMO 3,C,27-Nov-17,17-Apr-18,pyrite,mineral,exp,199,231326.9941,108
+DeMMO 3,C,27-Nov-17,17-Apr-18,pyrite,control,Internal Control,199,94037.93624,61
+DeMMO 3,D,27-Nov-17,17-Apr-18,hematite,mineral,exp,199,413150.2772,268
+DeMMO 3,D,27-Nov-17,17-Apr-18,hematite,control,Internal Control,199,285941.6595,185
+DeMMO 3,E,27-Nov-17,17-Apr-18,magnetite,mineral,exp,199,465234.8081,301
+DeMMO 3,E,27-Nov-17,17-Apr-18,magnetite,control,Internal Control,199,,NA
+DeMMO 3,F,27-Nov-17,17-Apr-18,control sand,Control,Control,199,738811.4228,478
+DeMMO 3,F,27-Nov-17,17-Apr-18,control sand,control,Control Rep,199,212741.5748,132
+Demmo 6,1,14-Feb-17,10-May-17,Pyrolusite,mineral,Exp,85,2081167.441,675
+Demmo 6,1,14-Feb-17,10-May-17,Pyrolusite,mineral,Rep,85,4788226.72,1553
+Demmo 6,1,14-Feb-17,10-May-17,pyrolusite,control,internal Control,85,116599.3061,3.85
+Demmo 6,2,14-Feb-17,10-May-17,Siderite,mineral,Exp,85,183451.0559,119
+Demmo 6,2,14-Feb-17,10-May-17,Siderite,mineral,Rep,85,1088123.937,352
+Demmo 6,2,14-Feb-17,10-May-17,siderite,control,internal Control,85,1541.605512,1
+Demmo 6,3,14-Feb-17,10-May-17,Pyrite,mineral,Exp,85,1045208.537,678
+Demmo 6,3,14-Feb-17,10-May-17,Pyrite,mineral,Rep,85,2765640.289,897
+Demmo 6,3,14-Feb-17,10-May-17,pyrite,control,internal Control,85,,NA
+Demmo 6,4,14-Feb-17,10-May-17,Hematite,mineral,Exp,85,1831427.348,594
+Demmo 6,4,14-Feb-17,10-May-17,Hematite,mineral,Rep,85,556519.5899,361
+Demmo 6,4,14-Feb-17,10-May-17,hematite,control,internal Control,85,,NA
+Demmo 6,5,14-Feb-17,10-May-17,Magnetite,mineral,Exp,85,1251783.676,406
+Demmo 6,5,14-Feb-17,10-May-17,Magnetite,mineral,Rep,85,443982.3875,288
+Demmo 6,5,14-Feb-17,10-May-17,magnetite,control,internal Control,85,0,
+DeMMO 6,6,14-Feb-17,10-May-17,control sand,Control,Control,85,35549.50361,23
+DeMMO 6,6,14-Feb-17,10-May-17,control sand,control,Control Rep,85,513354.6355,333
+DeMMO 1,1,,,fluid,fluid,fluid,,27.6,
+DeMMO 3,3,,,fluid,fluid,fluid,,60.8,
+DeMMO 6,6,,,fluid,fluid,fluid,,2315.5,

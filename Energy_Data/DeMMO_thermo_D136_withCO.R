@@ -186,9 +186,13 @@ DeMMO_thermo_data$mineral <- reactions$reactant.a
 DeMMO_thermo_data <- DeMMO_thermo_data %>%
   filter(Site=="DeMMO1" | Site=="DeMMO3" | Site=="DeMMO6")
 
+mineral_color_dict <- c("#db72fb", "#66a4ff", "#d89600", "#00bc39", "#00b7e2", "#00c19f")
+names(mineral_color_dict) <- unique(reactions$reactant.a)
+
 deltaG_plot <- ggplot(DeMMO_thermo_data, aes(DeltaG_norm, reorder(rxn.number, -DeltaG_norm), shape=Site, group=rxn.number)) +
   theme_gray() +
   geom_line(aes(color=mineral), size=2.5, alpha=0.6) +
+  #scale_color_manual(values=mineral_color_dict) +
   geom_point() + 
   scale_shape_manual(values = c(15,16,17)) + 
   scale_x_reverse() +
@@ -196,8 +200,8 @@ deltaG_plot <- ggplot(DeMMO_thermo_data, aes(DeltaG_norm, reorder(rxn.number, -D
   labs(x=expression(Delta~G[r]~'kJ/mol'~e^{textstyle("-")})) +
   ylab("Reaction #") +
   geom_vline(xintercept = 0, linetype="dotted", color = "black") +
-  theme(legend.position = c(.1, .84), legend.text=element_text(size=6), legend.title = element_text(size=8, face="bold")) +
-  theme(legend.key.size =  unit(0.1, "in"))
+  theme(legend.position = c(.1, .78), legend.text=element_text(size=8), legend.title = element_text(size=8, face="bold")) +
+  theme(legend.key.size =  unit(0.2, "in"))
 
 #gather Edens data into long dataframe for plotting
 DeMMO_Edens_data <- gather(DeMMO_E_dens, Site, E_dens, DeMMO1.ED_dens:DeMMO6.EA_dens, factor_key=TRUE, na.rm = FALSE)
@@ -245,7 +249,7 @@ Edens_plot <- ggplot(DeMMO_Edens_data, aes(E_dens, reorder(rxn.number, -DeltaG_n
   theme(panel.grid.minor = element_line(colour="white", size=0.5)) +
   theme(axis.title.y = element_blank()) +
   scale_y_discrete(breaks = seq(0, nrow(reactions), 1)) +
-  theme(legend.position = c(.15, .2), legend.text=element_text(size=6), 
+  theme(legend.position = c(.15, .2), legend.text=element_text(size=8), 
         legend.title = element_text(size=8, face="bold"),
         legend.key.size =  unit(0.005, "in")) 
 
