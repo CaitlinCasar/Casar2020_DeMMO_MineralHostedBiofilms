@@ -1,0 +1,387 @@
+Site,Query_Seq_ID,Hit_Seq_ID,GTDBtk_taxonomy
+DeMMO4,OTU_1008,DeMMO4_16,D_0__Bacteria; D_1__Planctomycetes; D_2__Planctomycetacia; D_3__Planctomycetales; D_4__Planctomycetaceae; D_5__Candidatus Brocadiae
+DeMMO1,OTU_1011,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_1015,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_1023,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO4,OTU_1075,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO1,OTU_1079,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_1098,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_1104,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO1,OTU_1106,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO4,OTU_111,DeMMO4_16,D_0__Bacteria; D_1__Planctomycetes; D_2__Planctomycetacia; D_3__Planctomycetales; D_4__Planctomycetaceae; D_5__Candidatus Brocadiae
+DeMMO3,OTU_1164,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_1169,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO6,OTU_120,DeMMO6_50,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO2,OTU_1205,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1217,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_1219,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_1235,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_1249,DeMMO3_54,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO6,OTU_1261,DeMMO6_41,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_1263,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_1278,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO5,OTU_1285,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO5,OTU_1306,DeMMO5_5,D_0__Bacteria; D_1__Actinobacteria
+DeMMO2,OTU_1312,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_1318,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO3,OTU_1364,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO3,OTU_1377,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_1428,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria
+DeMMO4,OTU_1430,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO2,OTU_1444,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_145,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1507,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1508,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_151,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_1513,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_1524,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO4,OTU_1530,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO6,OTU_1532,DeMMO6_54,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO2,OTU_1540,DeMMO2_48,D_0__Bacteria; D_1__Falkowbacteria
+DeMMO3,OTU_1587,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_1588,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_160,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_161,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_164,DeMMO3_17,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_168,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_1690,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_173,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1735,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_1744,DeMMO2_5,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_1746,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_1776,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO3,OTU_1791,DeMMO3_7,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_1800,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_181,DeMMO3_2,D_0__Bacteria; D_1__Calditrichaeota
+DeMMO2,OTU_183,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_1834,DeMMO2_48,D_0__Bacteria; D_1__Patescibacteria
+DeMMO6,OTU_1836,DeMMO6_47,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1840,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_1874,DeMMO5_12,D_0__Bacteria; D_1__Planctomycetes; D_2__Planctomycetacia; D_3__Planctomycetales; D_4__Planctomycetaceae; D_5__Candidatus Brocadiae
+DeMMO2,OTU_1885,DeMMO2_48,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_1906,DeMMO2_30,D_0__Archaea; D_1__Nanoarchaeaeota
+DeMMO2,OTU_1907,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_1914,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO2,OTU_1921,DeMMO2_21,D_0__Bacteria; D_1__Micrarchaeota
+DeMMO1,OTU_1932,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_1954,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_1958,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO2,OTU_1964,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_1969,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_1981,DeMMO2_88,D_0__Bacteria; D_1__Acidobacteria
+DeMMO2,OTU_1983,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_200,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_2000,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_2016,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_2114,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_2148,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO5,OTU_2164,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_2176,DeMMO2_88,D_0__Bacteria; D_1__D_0__Bacteria; D_1__Acidobacteria
+DeMMO3,OTU_2191,DeMMO3_3,D_0__Bacteria; D_1__Zixibacteria
+DeMMO3,OTU_221,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_2212,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_2218,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO5,OTU_2220,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_2230,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_2252,DeMMO2_88,D_0__Bacteria; D_1__D_0__Bacteria; D_1__Acidobacteria
+DeMMO2,OTU_2329,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_2329,DeMMO3_73,D_0__Bacteria; D_1__Elusimicrobia
+DeMMO1,OTU_2344,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_2346,DeMMO2_52,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO6,OTU_2349,DeMMO6_30,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO1,OTU_2370,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_2388,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO4,OTU_241,DeMMO4_16,D_0__Bacteria; D_1__Planctomycetes; D_2__Planctomycetacia; D_3__Planctomycetales; D_4__Planctomycetaceae; D_5__Candidatus Brocadiae
+DeMMO2,OTU_2419,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_2458,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_2541,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_2563,DeMMO3_7,D_0__Bacteria; D_1__Zixibacteria
+DeMMO5,OTU_2569,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_2571,DeMMO2_48,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_258,DeMMO2_29,D_0__Bacteria; D_1__Patescibacteria
+DeMMO6,OTU_2588,DeMMO6_38,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO4,OTU_2602,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO1,OTU_2612,DeMMO1_11,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_262,DeMMO3_17,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_2623,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_263,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_2634,DeMMO3_11,D_0__Bacteria; D_1__Actinobacteria
+DeMMO5,OTU_2673,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_2678,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_2708,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_271,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_275,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_278,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_2916,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_294,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_296,DeMMO2_88,D_0__Bacteria; D_1__D_0__Bacteria; D_1__Acidobacteria
+DeMMO2,OTU_2966,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_2973,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_2986,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3006,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_3030,DeMMO3_2,D_0__Bacteria; D_1__Calditrichaeota
+DeMMO2,OTU_3056,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_3065,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_31,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_310,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO6,OTU_314,DeMMO6_41,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_3143,DeMMO3_21,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_3178,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3189,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO6,OTU_321,DeMMO6_4,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO6,OTU_3210,DeMMO6_4,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO5,OTU_323,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_3254,DeMMO3_18,D_0__Bacteria; D_1__Actinobacteria
+DeMMO2,OTU_3258,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_3259,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3294,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_3300,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO3,OTU_3334,DeMMO3_36,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_3357,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_337,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3386,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_3393,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_3443,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_3449,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_3483,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3514,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_3526,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_353,DeMMO3_46,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_356,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_3584,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_3598,DeMMO2_52,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO1,OTU_3662,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_3686,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO4,OTU_3723,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO1,OTU_3735,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_3744,DeMMO5_12,D_0__Bacteria; D_1__Planctomycetes; D_2__Planctomycetacia; D_3__Planctomycetales; D_4__Planctomycetaceae; D_5__Candidatus Brocadiae
+DeMMO5,OTU_3750,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_3761,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_3796,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO5,OTU_3796,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO3,OTU_3844,DeMMO3_2,D_0__Bacteria; D_1__Calditrichaeota
+DeMMO5,OTU_389,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_3927,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_3942,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_3995,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_4003,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_407,DeMMO2_52,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Unclassified; D_4__Microgenomates
+DeMMO2,OTU_4081,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_412,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO2,OTU_4130,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO1,OTU_4137,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_4145,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_4147,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4185,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_4262,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_4287,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_433,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4334,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_4376,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO5,OTU_4395,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_4400,DeMMO3_63,D_0__Bacteria; D_1__Patescibacteria; D_2__Gracilibacteria
+DeMMO2,OTU_4403,DeMMO2_21,D_0__Bacteria; D_1__Micrarchaeota
+DeMMO3,OTU_446,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_4471,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_4495,DeMMO3_36,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4510,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4513,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4519,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_4543,DeMMO2_52,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_4550,DeMMO3_1,D_0__Bacteria; D_1__Edwardsbacteria
+DeMMO1,OTU_458,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_4584,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_459,DeMMO2_50,D_0__Bacteria; D_1__Micrarchaeota
+DeMMO3,OTU_4615,DeMMO3_36,D_0__Bacteria; D_1__Patescibacteria
+DeMMO4,OTU_4630,DeMMO4_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria; D_3__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriales; D_4__D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteriaceae; D_5__Ignavibacterium 
+DeMMO2,OTU_4663,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_4760,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_4841,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_486,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_4870,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_4872,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_4928,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_4958,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_4975,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_498,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO5,OTU_500,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_5002,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_5022,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_5027,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_5044,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5065,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_5081,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_5129,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_5232,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_5265,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_529,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_532,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_5365,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5370,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5378,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO6,OTU_539,DeMMO6_15,D_0__Bacteria; D_1__Chloroflexi; D_2__Anaerolineae; D_3__Anaerolineales
+DeMMO2,OTU_5408,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5433,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_546,DeMMO3_17,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_5470,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_552,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_553,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_554,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO5,OTU_5545,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO1,OTU_5594,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_560,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_5602,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_5618,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_5619,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5628,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_5637,DeMMO3_59,D_0__Bacteria; D_1__Chloroflexi; D_2__Anaerolineae; D_3__Anaerolineales
+DeMMO1,OTU_5647,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_5652,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_5674,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_5713,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_573,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_5743,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_5758,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO1,OTU_5768,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_578,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO4,OTU_58,DeMMO4_21,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO6,OTU_5808,DeMMO6_47,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_5831,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_5840,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO5,OTU_5895,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_5907,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_60,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_603,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_6061,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_6074,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_615,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO3,OTU_6163,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_6198,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO6,OTU_62,DeMMO6_23,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_621,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_6220,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_6328,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_634,DeMMO3_17,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_6343,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO2,OTU_6366,DeMMO2_88,D_0__Bacteria; D_1__Acidobacteria
+DeMMO1,OTU_6388,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_6420,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_6468,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_6488,DeMMO2_25,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_653,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_6659,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_6722,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_6735,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_6738,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_6769,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_6784,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_6811,DeMMO5_45,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_6869,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_6872,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_6880,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_6925,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_693,DeMMO5_45,D_0__Bacteria; D_1__Kazanbacteria
+DeMMO3,OTU_6939,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_6970,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_7024,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_7080,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO5,OTU_7232,DeMMO5_45,D_0__Bacteria; D_1__Kazanbacteria
+DeMMO3,OTU_7243,DeMMO3_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__Bacteroidia; D_3__Bacteroidales
+DeMMO1,OTU_7259,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_7287,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_733,DeMMO3_63,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_7353,DeMMO3_73,D_0__Bacteria; D_1__Elusimicrobia
+DeMMO5,OTU_7358,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO3,OTU_7473,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_7474,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO3,OTU_752,DeMMO3_18,D_0__Bacteria; D_1__Actinobacteria
+DeMMO3,OTU_7534,DeMMO3_8,D_0__Bacteria; D_1__Nitrospirae
+DeMMO1,OTU_7541,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_7553,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_7565,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO6,OTU_76,DeMMO6_8,D_0__Bacteria; D_1__Actinobacteria
+DeMMO3,OTU_761,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO2,OTU_7621,DeMMO2_4,D_0__Bacteria; D_1__Bacteroidetes; D_2__Ignavibacteria
+DeMMO2,OTU_764,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_7646,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_7656,DeMMO2_48,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_7667,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO2,OTU_7691,DeMMO2_27,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_7708,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO5,OTU_7728,DeMMO5_16,D_0__Bacteria; D_1__Bipolaricaulota
+DeMMO5,OTU_775,DeMMO5_37-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO5,OTU_7755,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO2,OTU_7797,DeMMO2_33,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO2,OTU_7823,DeMMO2_29,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_7832,DeMMO2_9,D_0__Bacteria; D_1__Planctomycetes; D_2__Phycisphaerae
+DeMMO2,OTU_7854,DeMMO2_30,D_0__Archaea; D_1__Nanoarchaeaeota
+DeMMO3,OTU_7937,DeMMO3_67,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO3,OTU_7942,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO1,OTU_795,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_799,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO3,OTU_8031,DeMMO3_3,D_0__Bacteria; D_1__Zixibacteria
+DeMMO3,OTU_8049,DeMMO3_18,D_0__Bacteria; D_1__Actinobacteria
+DeMMO2,OTU_807,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_8074,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_8113,DeMMO3_7,D_0__Bacteria; D_1__Goldbacteria
+DeMMO3,OTU_8117,DeMMO3_17,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_813,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_8134,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO5,OTU_817,DeMMO5_10,D_0__Bacteria; D_1__Eremiobacteria
+DeMMO1,OTU_8186,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_8198,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_8203,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO1,OTU_8213,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_825,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO5,OTU_8287,DeMMO5_3,D_0__Bacteria; D_1__Firmicutes; D_2__Clostridia
+DeMMO1,OTU_8296,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_836,DeMMO3_46,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_8374,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_8426,DeMMO3_59,D_0__Bacteria; D_1__Chloroflexi; D_2__Anaerolineae; D_3__Anaerolineales
+DeMMO1,OTU_8467,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_8481,DeMMO3_59,D_0__Bacteria; D_1__Chloroflexi; D_2__Anaerolineae; D_3__Anaerolineales
+DeMMO2,OTU_8499,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria
+DeMMO3,OTU_85,DeMMO3_59,D_0__Bacteria; D_1__Chloroflexi; D_2__Anaerolineae; D_3__Anaerolineales
+DeMMO3,OTU_8533,DeMMO3_3,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_8539,DeMMO1_19,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO1,OTU_8546,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_8555,DeMMO3_21,D_0__Bacteria; D_1__Zixibacteria
+DeMMO2,OTU_8581,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_8674,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_8784,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_8789,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_8799,DeMMO3_5,D_0__Bacteria; D_1__Bacteroidetes; D_2__Bacteroidia; D_3__Bacteroidales
+DeMMO2,OTU_882,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_8839,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_8846,DeMMO2_10,D_0__Bacteria; D_1__Proteobacteria; D_2__Deltaproteobacteria
+DeMMO2,OTU_8847,DeMMO2_19,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_8865,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO2,OTU_888,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO2,OTU_8886,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO2,OTU_8981,DeMMO2_85-#2,D_0__Bacteria; D_1__Patescibacteria; D_2__Microgenomatia; D_3__Candidatus Pacebacteria
+DeMMO1,OTU_8984,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_8988,DeMMO2_37,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_8995,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_900,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_9000,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO1,OTU_9005,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO2,OTU_903,DeMMO2_15,D_0__Archaea; D_1__Nanoarchaeaeota
+DeMMO6,OTU_9127,DeMMO6_21,D_0__Bacteria; D_1__Proteobacteria; D_2__Deltaproteobacteria
+DeMMO1,OTU_9272,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_9288,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_9313,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_9344,DeMMO3_21,D_0__Bacteria; D_1__Zixibacteria
+DeMMO1,OTU_9372,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO1,OTU_9434,DeMMO1_19,D_0__Bacteria; D_1__Chlamydiae; D_2__Chlamydiae; D_3__Parachlamydiales
+DeMMO3,OTU_9452,DeMMO3_75,D_0__Bacteria; D_1__Nitrospirae
+DeMMO2,OTU_9454,DeMMO2_20,D_0__Bacteria; D_1__Omnitrophicaeota
+DeMMO1,OTU_9459,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_9460,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_9471,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_9564,DeMMO3_2,D_0__Bacteria; D_1__Calditrichaeota
+DeMMO1,OTU_9616,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO3,OTU_9639,DeMMO3_2,D_0__Bacteria; D_1__Calditrichaeota
+DeMMO2,OTU_9658,DeMMO2_23,D_0__Bacteria; D_1__Patescibacteria
+DeMMO1,OTU_9694,DeMMO1_3,D_0__Bacteria; D_1__Lentisphaerae
+DeMMO3,OTU_9720,DeMMO3_34,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria
+DeMMO1,OTU_986,DeMMO1_11,D_0__Bacteria; D_1__Patescibacteria; D_2__ABY1; D_3__Uhrbacterales; D_4__GWF2-40-263; D_5__Candidatus Uhrbacteria

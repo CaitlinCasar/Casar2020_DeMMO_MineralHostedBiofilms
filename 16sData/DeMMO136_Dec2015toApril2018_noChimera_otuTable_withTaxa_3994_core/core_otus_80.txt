@@ -1,2 +1,0 @@
-# Core OTUs across 80 % of samples.
-OTU_5	['D_0__Bacteria', 'D_1__Proteobacteria', 'D_2__Gammaproteobacteria', 'D_3__Betaproteobacteriales', 'D_4__Hydrogenophilaceae', 'D_5__Thiobacillus']
