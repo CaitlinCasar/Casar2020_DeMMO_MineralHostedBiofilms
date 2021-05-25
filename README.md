@@ -12,3 +12,8 @@ to thermodynamic models of putative metabolic reactions with minerals suggests a
 Our findings indicate that minerals can significantly enhance biofilm cell densities and promote selective colonization by taxa putatively capable of 
 extracellular electron transfer. In turn, minerals can drive significant differences in biodiversity between fluid and biofilm communities. 
 Given our findings at DeMMO, we suggest that host rock mineralogy is an important ecological driver in deep continental biospheres.
+
+
+### SEM data download
+
+SEM data is available on [Figshare](https://figshare.com/articles/dataset/DeMMO_mineral_and_glass_coupon_SEM_images/14210831) under DOI `10.6084/m9.figshare.14210831`. 
